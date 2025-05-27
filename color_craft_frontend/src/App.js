@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import NeonColorPicker from './NeonColorPicker';
 
 function App() {
   return (
@@ -10,25 +11,14 @@ function App() {
             <div className="logo">
               <span className="logo-symbol">*</span> KAVIA AI
             </div>
-            <button className="btn">Template Button</button>
+            {/* The button from template is optional. Remove if desired for a cleaner look. */}
+            {/* <button className="btn">Template Button</button> */}
           </div>
         </div>
       </nav>
 
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">color_craft_frontend</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
+        <NeonColorPicker />
       </main>
     </div>
   );
